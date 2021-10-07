@@ -1,0 +1,13 @@
+.male {
+    background-color: cyan;
+    font-style: italic;
+}
+
+.female {
+    background-color: pink;
+    font-weight: bold;
+}
+
+.underlined {
+    text-decoration: underline;
+}
