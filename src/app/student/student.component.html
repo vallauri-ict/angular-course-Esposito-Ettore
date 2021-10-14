@@ -8,4 +8,8 @@
     (click)='onStudentClick()'
     class="clickable"> 
         {{ student.name }} - {{ student.hobby }} 
+        <!-- <span *ngIf="student.isPro" style="background-color: yellow;"> Professionista </span>
+        <span *ngIf="!student.isPro" style="background-color: yellow;"> Dilettante </span> -->
+        <span *ngIf="student.isPro;else noPro" style="background-color: yellow;"> Professionista </span>
+        <ng-template #noPro> <span style="background-color: yellow;"> Dilettante </span> </ng-template>
 </p>

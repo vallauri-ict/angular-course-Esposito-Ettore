@@ -8,14 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class StudentComponent implements OnInit {
 
   studentList = [
-    {name : "Ettore Esposito", hobby : 'karate', sex : 'M'},
-    {name : "Bianca Teleman", hobby : 'calcio', sex : 'F'},
-    {name : "Paolo Giordano", hobby : 'mostrare la patente', sex : 'M'},
-    {name : "Giada Valinotto", hobby : 'karate', sex : 'F'},
-    {name : "Gesù Cristo", hobby : 'karate', sex : 'M'},
-    {name : "Federico Mameli", hobby : 'calcio', sex : 'M'},
-    {name : "Martina Velardi", hobby : 'karate', sex : 'F'},
-    {name : "Marta Baudracco", hobby : 'karate', sex : 'F'},
+    {name : "Ettore Esposito", hobby : 'karate', sex : 'M', isPro : false},
+    {name : "Bianca Teleman", hobby : 'calcio', sex : 'F', isPro : false},
+    {name : "Paolo Giordano", hobby : 'mostrare la patente', sex : 'M', isPro : true},
+    {name : "Giada Valinotto", hobby : 'karate', sex : 'F', isPro : false},
+    {name : "Gesù Cristo", hobby : 'karate', sex : 'M', isPro : true},
+    {name : "Federico Mameli", hobby : 'calcio', sex : 'M', isPro : true},
+    {name : "Martina Velardi", hobby : 'karate', sex : 'F', isPro : true},
+    {name : "Marta Baudracco", hobby : 'karate', sex : 'F', isPro : false},
   ]
 
   student :any;
