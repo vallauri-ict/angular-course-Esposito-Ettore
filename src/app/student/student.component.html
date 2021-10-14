@@ -1,7 +1,7 @@
 <!-- <h4 [ngStyle]="{backgroundColor: student.sex == 'F' ? 'pink' : 'cyan'}"> 
     {{ student.name }} - {{ student.hobby }} 
 </h4> -->
-<p [ngClass]="{
+<span [ngClass]="{
     'female' : student.sex == 'F',
     'male' : student.sex == 'M',
     'underlined' : student.hobby == 'karate'}"
@@ -12,4 +12,4 @@
         <span *ngIf="!student.isPro" style="background-color: yellow;"> Dilettante </span> -->
         <span *ngIf="student.isPro;else noPro" style="background-color: yellow;"> Professionista </span>
         <ng-template #noPro> <span style="background-color: yellow;"> Dilettante </span> </ng-template>
-</p>
+</span>

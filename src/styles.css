@@ -3,3 +3,9 @@
     cursor: pointer;
     user-select: none;
 }
+
+.student {
+    margin: 5px 0;
+    text-align: left;
+    min-width: 350px;
+}
