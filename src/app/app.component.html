@@ -28,6 +28,17 @@
     <span>{{ title }} app is running!</span>
   </div>
 
+  <label for="txtName" style="margin: 5px;"> student name: </label>
+  <input type="text" id="txtName" #txtName [(ngModel)]="studentName" class="name">
+  <div class="gender"> 
+    <label> <input type="radio" name="rbtSex" value="M" [(ngModel)]="studentSex"/> Male </label> 
+    <label> <input type="radio" name="rbtSex" value="F" [(ngModel)]="studentSex"/> Female </label> 
+  </div>
+  <select [(ngModel)]="studentHobby" class="hobby">
+    <option *ngFor="let hobby of hobbies" [value]="hobby"> {{ hobby }} </option>
+  </select>
+  <button class="addStudent" (click)="onCreateStudent()"  [disabled]="studentName.length == 0"> Add student </button>
+
   <h2> The students </h2>
   <div *ngFor="let item of studentList; let i = index" class="student">
     <span> {{ i + 1 }} - </span> <app-student [student]="item"></app-student>
