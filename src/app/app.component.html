@@ -41,7 +41,8 @@
 
   <h2> The students </h2>
   <div *ngFor="let item of studentList; let i = index" class="student">
-    <span> {{ i + 1 }} - </span> <app-student [student]="item"></app-student>
+    <span> {{ i + 1 }} - </span> <app-student [student]="item" (studentDeleteEvent)="StudentDeleteEvent($event)"></app-student>
+    <!-- <button class="removeStudent" (click)="onDeleteStudent(i)"> Delete </button> -->
   </div>
   <!-- <app-student *ngFor="let item of studentList" ></app-student> -->
 

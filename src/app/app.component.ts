@@ -42,4 +42,12 @@ export class AppComponent {
 
     this.txtName.nativeElement.focus();
   }
+
+  onDeleteStudent(index :number) {
+    this.studentList.splice(index, 1);
+  }
+
+  StudentDeleteEvent(student :any) {
+    this.studentList.splice(this.studentList.indexOf(student), 1);
+  }
 }

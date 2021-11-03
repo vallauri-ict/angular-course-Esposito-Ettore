@@ -13,3 +13,4 @@
         <span *ngIf="student.isPro;else noPro" style="background-color: yellow;"> Professionista </span>
         <ng-template #noPro> <span style="background-color: yellow;"> Dilettante </span> </ng-template>
 </span>
+<button class="removeStudent" (click)="onDeleteStudent()"> Delete </button>

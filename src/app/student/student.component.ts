@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-student',
@@ -7,6 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class StudentComponent implements OnInit {
   @Input() student :any;
+  @Output() studentDeleteEvent = new EventEmitter<any>();
 
   constructor() {
     
@@ -23,5 +24,10 @@ export class StudentComponent implements OnInit {
   private RandomStudentPro() {
     let num = Math.floor(Math.random() * 2);
     return num == 1 ? true : false;
+  }
+
+  onDeleteStudent()
+  {
+    this.studentDeleteEvent.emit(this.student);
   }
 }

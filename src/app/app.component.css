@@ -280,22 +280,6 @@ svg#clouds {
     }
 }
 
-.addStudent {
-    background-color: #1976d2;
-    color: white;
-    font-weight: 600;
-    border: none;
-    width: auto;
-    padding: 10px;
-    border-radius: 5px;
-    margin: 5px;
-}
-
-.addStudent:disabled {
-    background-color: darkgray;
-    color: black;
-}
-
 .name, .hobby {
     padding: 5px;
     text-align: center;
